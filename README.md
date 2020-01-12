@@ -14,4 +14,8 @@ There are 5 databases carved out of the original:
 
 ## DBMS Systems
 
-Currently, they databases are provided for MySQL 5.x and hire in the form of mysqldump files.
+Currently, the databases are provided for MySQL 5.x and hire in the form of mysqldump files.
+
+## Schemas and Users
+
+The scripts also create the database/schema and users/owners for each database.
