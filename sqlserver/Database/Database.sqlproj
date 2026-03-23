@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build">
+  <Sdk Name="Microsoft.Build.Sql" Version="1.0.0" />
+  <PropertyGroup>
+    <Name>Database</Name>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql150DatabaseSchemaProvider</DSP>
+    <ModelCollation>1033, CI</ModelCollation>
+    <ProjectGuid>{00000000-0000-0000-0000-000000000000}</ProjectGuid>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="demo\data\categories_data.sql" />
+    <None Include="demo\data\employee_territories_data.sql" />
+    <None Include="demo\data\region_data.sql" />
+    <None Include="demo\data\shippers_data.sql" />
+    <None Include="demo\data\territories_data.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="demo" />
+  </ItemGroup>
+</Project>
