@@ -1,21 +1,18 @@
-# Northwind Sample Databases
+# Northwind Sample Database
 
-Sample databases for working with microservices based on the orginal Northwind sample database from Microsoft.
+I like using the Northwind sample database from Microsoft for demos and training. The schema is small enough that it is
+easy to reason over, yet includes a bit of everything.
 
-## The Databases
+In addition to the original schema, I also provide a few variations to support good architecture, microservices, and
+scripts to create AspNet Core Identity users for each of the employees in the database.
 
-There are 5 databases carved out of the original:
+The original sample from Microsoft is for SQL Server. I have ported the original and my variants to PostgreSQL, MySQL,
+and SQLite.
 
-1. customer-db
-2. order-db
-3. catalog-db
-4. inventory-db
-5. shipping-db
+## Images
 
-## DBMS Systems
+The original database includes images for employee photos and categories are stored in the database itself and embedded 
+in the scripts as part of the insert statements. While the original scripts remains intact, I supply a variation with
+the original schema but with the images applied as updates later from modern enhanced png versions of the originals. My
+variations also use `varbinary(max)` instead of `image` for the SQL Server column type.
 
-Currently, the databases are provided for MySQL 5.x and hire in the form of mysqldump files.
-
-## Schemas and Users
-
-The scripts also create the database/schema and users/owners for each database.
